@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: springboot-hello
+
+server: 
+  port: 8007
+  
+database:
+  host: host
+  username: username
+  port: 3306
+  password: password
+
+player:
+  name: hehe
+  age: 19
+  address: HN
