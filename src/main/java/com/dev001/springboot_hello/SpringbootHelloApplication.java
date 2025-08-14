@@ -1,4 +1,4 @@
-package com.shopdevjava.springboot_hello;
+package com.dev001.springboot_hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
