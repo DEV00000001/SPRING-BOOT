@@ -18,7 +18,8 @@ public class SpringbootHelloApplication {
 	}
 	@GetMapping("v1/api/hello")
 	public String Hello(){
-		return "Hello, Spring Boot!";
+        return "Hello, Spring Boot!"
+                ;
 	}
 
 
