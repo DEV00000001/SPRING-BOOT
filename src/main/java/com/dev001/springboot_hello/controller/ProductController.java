@@ -20,6 +20,7 @@ public class ProductController {
 
   @PostMapping("/product/add")
   public ProductEntity createProduct(ProductEntity productEntity) {
+
     return productService.createProduct(productEntity);
 
   }
