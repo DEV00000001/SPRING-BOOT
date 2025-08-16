@@ -2,7 +2,8 @@ package com.dev001.springboot_hello.repository;
 
 import com.dev001.springboot_hello.entity.user.UserEntity;
 import jakarta.transaction.Transactional;
-import org.apache.catalina.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;
@@ -17,7 +18,9 @@ public interface UserRepository extends JpaRepository<UserEntity, Long>, JpaSpec
     UserEntity findByUserNameAndUserEmail(String userName, String userEmail);
 
     // where userName = ?1
-    UserEntity findByUserName(String userName);
+//    UserEntity findByUserName(String userName);
+
+    Page<UserEntity> findByUserName(String userName, Pageable pageable);
 
     /*
     * WHERE userName LIKE %?
